@@ -1,0 +1,48 @@
+<div id="app" data-s="idle">
+<div class="layer stars" id="stars"></div>
+<div class="layer"><div class="cloud" style="bottom:30%"></div><div class="cloud" style="bottom:22%;animation-duration:120s;left:-40%"></div></div>
+<button class="moon" id="moon" aria-label="Crescent moon, tap to shimmer">
+<svg viewBox="0 0 200 200"><defs>
+<radialGradient id="hl"><stop offset="0" stop-color="#A8B8DA" stop-opacity=".38"/><stop offset=".5" stop-color="#526889" stop-opacity=".14"/><stop offset="1" stop-color="#526889" stop-opacity="0"/></radialGradient>
+<linearGradient id="mg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#E7ECF8"/><stop offset="1" stop-color="#A8B8DA"/></linearGradient>
+<mask id="cm"><rect width="200" height="200" fill="#fff"/><circle cx="122" cy="82" r="54" fill="#000"/></mask></defs>
+<circle cx="100" cy="100" r="150" fill="url(#hl)"/>
+<g mask="url(#cm)"><circle cx="90" cy="108" r="60" fill="#A8B8DA" opacity=".3" transform="translate(-4 4) scale(1.06)" transform-origin="90 108"/><circle cx="90" cy="108" r="60" fill="url(#mg)"/><circle cx="90" cy="108" r="58" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/></g></svg>
+</button>
+<div class="layer"><svg class="far" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMax slice"><defs><linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8d9fc6"/><stop offset="1" stop-color="#3a4d73"/></linearGradient><linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#526889"/><stop offset="1" stop-color="#1c2a4a"/></linearGradient></defs>
+<path d="M0,380 C100,350 160,300 240,280 C320,200 380,130 450,110 C520,150 560,230 640,300 C700,350 760,380 820,360 C900,320 960,250 1030,200 C1090,150 1150,110 1210,130 C1280,170 1340,260 1440,300 L1440,600 L0,600Z" fill="url(#m1)" opacity=".85" stroke="#E7ECF8" stroke-opacity=".35" stroke-width="1.5"/></svg></div>
+<div class="layer"><svg class="mid" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMax slice"><path d="M0,450 C120,400 200,340 300,300 C380,250 430,230 480,260 C560,320 600,400 720,430 C820,445 900,400 980,350 C1060,300 1120,270 1200,300 C1290,340 1360,400 1440,420 L1440,600 L0,600Z" fill="url(#m2)" stroke="#A8B8DA" stroke-opacity=".3" stroke-width="1.5"/></svg></div>
+<div class="layer"><svg class="fore" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMax slice"><path d="M0,520 C150,480 260,440 380,470 C480,495 560,540 700,550 C840,555 940,520 1060,480 C1180,445 1300,470 1440,510 L1440,600 L0,600Z" fill="#0a1228" stroke="#526889" stroke-opacity=".35"/></svg></div>
+
+<div class="pup" id="pup">
+<div style="position:relative;width:100%"><button class="pbtn" id="pbtn" aria-label="Open this Nur: tap the puppy to open the birthday scroll">
+<svg viewBox="0 0 200 200" aria-hidden="true"><defs>
+<radialGradient id="fur" cx=".4" cy=".3" r=".9"><stop offset="0" stop-color="#FBF3E2"/><stop offset=".7" stop-color="#EDDDBD"/><stop offset="1" stop-color="#D6C29B"/></radialGradient>
+<linearGradient id="sc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBF3E0"/><stop offset="1" stop-color="#E3D2AA"/></linearGradient></defs>
+<ellipse cx="100" cy="188" rx="56" ry="8" fill="#000" opacity=".4"/>
+<g class="breathe"><g class="tail"><path d="M140,152 C172,146 182,114 162,102 C162,124 154,134 138,138Z" fill="url(#fur)"/></g>
+<ellipse cx="100" cy="150" rx="48" ry="36" fill="url(#fur)"/><ellipse cx="80" cy="184" rx="15" ry="9" fill="#F3E8CE"/><ellipse cx="120" cy="184" rx="15" ry="9" fill="#F3E8CE"/><path d="M74,184v-4M80,185v-4M86,184v-4M114,184v-4M120,185v-4M126,184v-4" stroke="#C9B48A" stroke-width="1.2" stroke-linecap="round"/>
+<g class="head"><path d="M64,66 C36,64 26,104 42,130 C58,128 68,108 68,86Z" fill="#DCC9A2"/><path d="M136,66 C164,64 174,104 158,130 C142,128 132,108 132,86Z" fill="#DCC9A2"/>
+<circle cx="100" cy="94" r="44" fill="url(#fur)"/><path d="M70,58 C84,44 112,42 130,56" stroke="#fff" stroke-opacity=".3" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M135,66 A44,44 0 0 1 141,100" stroke="#E7ECF8" stroke-opacity=".5" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="100" cy="110" rx="23" ry="17" fill="#FBF5E6"/><circle cx="72" cy="106" r="7" fill="#E8AAB9" opacity=".3"/><circle cx="128" cy="106" r="7" fill="#E8AAB9" opacity=".3"/>
+<g class="eye"><ellipse cx="82" cy="90" rx="5.5" ry="7" fill="#151a2c"/><circle cx="84" cy="87" r="2" fill="#fff"/></g><g class="eye"><ellipse cx="118" cy="90" rx="5.5" ry="7" fill="#151a2c"/><circle cx="120" cy="87" r="2" fill="#fff"/></g>
+<path d="M75,79 Q82,75 89,78M111,78 Q118,75 125,79" stroke="#B9A57C" stroke-width="2" fill="none" stroke-linecap="round"/>
+<ellipse cx="100" cy="101" rx="7" ry="5" fill="#2a2030"/><ellipse cx="98" cy="99.5" rx="2.2" ry="1.2" fill="#fff" opacity=".6"/>
+<g class="scroll"><rect x="66" y="112" width="68" height="13" rx="6.5" fill="url(#sc)" stroke="#C7B27E" stroke-width=".8"/><ellipse cx="66" cy="118.5" rx="4" ry="6.5" fill="#EAD9AF" stroke="#B9A26B" stroke-width=".8"/><ellipse cx="134" cy="118.5" rx="4" ry="6.5" fill="#EAD9AF" stroke="#B9A26B" stroke-width=".8"/><path d="M66,118.5a2,3 0 1 1 1,0M134,118.5a2,3 0 1 0 -1,0" stroke="#B9A26B" stroke-width=".7" fill="none"/>
+<rect x="97" y="111" width="6" height="15" fill="#526889"/><path d="M100,118 C90,108 88,121 98,120ZM100,118 C110,108 112,121 102,120Z" fill="#6c83a8"/><path d="M99,120 l-4,9 3,-1 1,3ZM101,120 l4,9 -3,-1 -1,3Z" fill="#526889"/></g></g></g></svg>
+<span id="sparks"></span></button></div>
+<div class="lab"><i>✦</i>Open this Nur<i style="animation-delay:1.2s">✦</i></div>
+</div>
+
+<div class="petals" id="petals" aria-hidden="true"></div>
+<section class="stage" id="stage" aria-label="Birthday letter for Nur"><div class="col">
+<svg class="bq" id="bq" viewBox="0 0 300 310" role="img" aria-label="A hand-tied bouquet of pink and ivory tulips"></svg>
+<div class="pw"><article class="parch" id="parch">
+<h1 class="rv" style="--i:0" id="h" tabindex="-1">Happyyyyyuy Birthdayyyyy Nurr 🌷🌷💙💙</h1>
+<p class="rv" style="--i:1">i can't belive we met almost 3 years ago, it feels like eldians gc was yesterdayy, from then too now you are the samee with me, before i used to remember your face as hangee 😭😭.</p>
+<p class="rv" style="--i:2">Thankyouuu for being myyy longestt , favorite and best online friend everrrr, ik you disappear often but thats a part of you knoww, and even after long absencee you are still the sameee, honestly i couldn't have asked for a better online friendd, welll you are older then mee nowww happyyy 21 Nur 🥂, i hope the way to all your dreams is shinning with Nur</p>
+<div class="sig rv" style="--i:3"><svg width="22" height="30" viewBox="0 0 22 30" aria-hidden="true"><path d="M11,29 C11,20 10,14 11,9" stroke="#8FA18B" stroke-width="1.6" fill="none"/><path d="M11,24 C5,22 3,17 4,14 C8,16 10,19 11,24Z" fill="#8FA18B"/><path d="M4,9 C3,3 7,1 11,0 C15,1 19,3 18,9 C16,13 6,13 4,9Z" fill="#E8AAB9"/><path d="M11,0 C9,4 9,9 11,12 C13,9 13,4 11,0Z" fill="#F6D3DC"/></svg><span>for Nurrrr</span></div>
+</article></div></div></section>
+<button class="ctl" id="rp" aria-label="Replay the reveal">↺ Replay</button>
+<button class="ctl burst" id="bs" aria-label="Release a shower of petals">✦ Petals</button>
+</div>
